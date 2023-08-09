@@ -10,7 +10,7 @@
   font-family: 'Mukta', sans-serif;
 }
 
-$purple: rgb(92, 92, 177);
+$purple: rgb(92, 92, 177); // color variables
 $green: rgb(93, 151, 59);
 $blue: rgb(124, 124, 238);
 
@@ -30,16 +30,16 @@ body {
   overflow: hidden;
   justify-content: center;
   align-items: center;
-  width: 400px;
+  width: 1500px;
   height: 500px;
   transition: transform 0.5s ease;
-  .slide {
+  .slide { 
     transition: transform 0.8s ease-in-out;
     transform: translateX(-100%);
     overflow: hidden;
 
   }
-  span {
+  span { // the star effect listed below - 10 stars
     position: fixed;
     top: -120px;
     height: 50px;
@@ -107,9 +107,11 @@ body {
     color: white;
     animation-delay: 3.5s;
   }
+
+
 }
 
-@keyframes animate {
+@keyframes animate { // star animation keyframe
   0%{
     transform: translateY(0);
     opacity: 1;
@@ -124,20 +126,20 @@ body {
   }
 }
 
-.login-container{
-  position:absolute;
+.login-container{ // Unresolved issue- to be fixed - the transform translate is clipping incorrectly into the other form
+  position: relative;
   font-size: 1.40rem;
-  width: 24rem;
+  width: 500px;
   height: 25rem;
   background: transparent;
   border: 0.1rem solid #9663c9;
   border-radius: 0.5rem;
   padding: 1rem 2rem;
   transition: transform 1.3s ease-in-out;
-  transform: translateX(0);
+  transform: translateX(50%);
   .slide {
     transition: transform 0.8s ease-in-out;
-    transform: translateX(0);
+    transform: translateX(200px);
 
   }
 
@@ -157,7 +159,7 @@ body {
       font-size: 1.5rem;
     }
   }
-  .btn-media-login:hover{
+  .btn-media-login:hover{ // hovering animation for social media
     background-color: #fff;
     transition: .5s;
     width: 5.5rem;
@@ -197,19 +199,17 @@ body {
 }
 
 
-.register-container {
-  position:absolute;
+.register-container { // unresolved clipping issue - to be fixed
   overflow: hidden;
-  width: 20rem;
+  width: 500px;
   height: 30rem;
   font-size: 1.40rem;
-  right: 1rem;
   background: transparent;
   border: 0.1rem solid #9663c9;
   border-radius: 0.5rem;
   padding: 1rem 2rem;
   transition: transform 1.3s ease-in-out;
-  transform: translateX(-100%);
+  transform: translateX(50%);
   cursor: pointer;
   .slide {
     transition: transform 0.8s ease-in-out;

@@ -25,7 +25,7 @@ body {
   overflow: hidden;
   justify-content: center;
   align-items: center;
-  width: 400px;
+  width: 1500px;
   height: 500px;
   transition: transform 0.5s ease;
 }
@@ -117,20 +117,20 @@ body {
   }
 }
 .login-container {
-  position: absolute;
+  position: relative;
   font-size: 1.4rem;
-  width: 24rem;
+  width: 500px;
   height: 25rem;
   background: transparent;
   border: 0.1rem solid #9663c9;
   border-radius: 0.5rem;
   padding: 1rem 2rem;
   transition: transform 1.3s ease-in-out;
-  transform: translateX(0);
+  transform: translateX(50%);
 }
 .login-container .slide {
   transition: transform 0.8s ease-in-out;
-  transform: translateX(0);
+  transform: translateX(200px);
 }
 .login-container .btn-media-login {
   border-radius: 40%;
@@ -187,18 +187,16 @@ body {
 }
 
 .register-container {
-  position: absolute;
   overflow: hidden;
-  width: 20rem;
+  width: 500px;
   height: 30rem;
   font-size: 1.4rem;
-  right: 1rem;
   background: transparent;
   border: 0.1rem solid #9663c9;
   border-radius: 0.5rem;
   padding: 1rem 2rem;
   transition: transform 1.3s ease-in-out;
-  transform: translateX(-100%);
+  transform: translateX(50%);
   cursor: pointer;
 }
 .register-container .slide {

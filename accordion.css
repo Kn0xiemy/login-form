@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Mukta", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url('/img/img4.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+#accordion {
+  margin: 100px auto;
+  width: 600px;
+}
+
+#accordion li {
+  list-style: none;
+  width: 100%;
+  margin-bottom: 10px;
+  color: rgb(64, 64, 85);
+  padding: 10px;
+  border-radius: 0.5rem;
+  background: transparent;
+  border: 0.1rem solid #9663c9;
+}
+
+#accordion li label{
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#accordion li label span {
+  transform: rotate(90deg);
+  font-size: 18px;
+  color: black;
+}
+
+#accordion label + input[type="radio"]{
+  display: none;
+}
+
+#accordion .content {
+  padding: 0px 10px;
+  line-height: 26px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+
+#accordion label + input[type="radio"]:checked + .content {
+  max-height: 400px;
+  
+}

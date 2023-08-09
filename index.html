@@ -23,17 +23,18 @@
     <span>&#9733;</span>
     <span>&#9733;</span>
     <span>&#9733;</span>
-  <div class="login-container hide">
-    <form action="">
+  <div class="login-container">
+    <div class="error"></div>
+    <form id=" form" action="">
       <h1>Login</h1>
       <div class="input-container">
-        <input type="text"required>
+        <input type="text" id="name" required>
         <label for="">Username</label>
         <i class="fa-solid fa-user"></i>
       </div>
 
       <div class="input-container">
-        <input type="password"required>
+        <input type="password" id="password" required>
         <label for="">Password</label>
         <i class="fa-solid fa-lock"></i>
       </div>
@@ -42,7 +43,8 @@
         <label><input type="checkbox">Remember me</label>
         <a href="#">Forgot Password?</a>
       </div>
-      <button type="submit" class="btn login-btn">Login <i class="fa-solid fa-door-open"></i></button>
+      
+      <button type="submit" class="btn login-btn"><a href="accordion.html">Login</a><i class="fa-solid fa-door-open"></i></button>
 
       <div class="register">
         <p>Don't have an account yet? <a class="registration">Register</a></p>
@@ -58,7 +60,7 @@
 
   <!--Second page of the form(Registration)-->
 
-  <div class="register-container hide">
+  <div class="register-container">
     <form action="">
       <h1>Register</h1>
       <div class="input-container">
@@ -92,7 +94,7 @@
       <div class="register">
         <p>Already have an account? <a class="signInBtn-link">Sign In</a></p>
       </div>
-      <button type="submit" class="btn login-btn">Login <i class="fa-solid fa-door-open"></i></button>
+      <button type="submit" class="btn register-btn">Register <i class="fa-solid fa-door-open"></i></button>
 
         <div class="social-container">
           <button type="button" class="btn-media"><i class='bx bxl-facebook-circle'></i>Facebook</button>
