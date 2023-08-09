@@ -1,0 +1,367 @@
+*:focus {
+  outline: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mukta", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("/img/img4.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.main-container {
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 500px;
+  transition: transform 0.5s ease;
+}
+.main-container .slide {
+  transition: transform 0.8s ease-in-out;
+  transform: translateX(-100%);
+  overflow: hidden;
+}
+.main-container span {
+  position: fixed;
+  top: -120px;
+  height: 50px;
+  width: 50px;
+  z-index: -1;
+  animation: animate 10s linear infinite;
+}
+.main-container span:nth-child(1) {
+  left: 1900px;
+  font-size: 2rem;
+  color: white;
+  animation-delay: 0.6s;
+}
+.main-container span:nth-child(2) {
+  left: 1620px;
+  font-size: 2rem;
+  color: white;
+  animation-delay: 4.6s;
+}
+.main-container span:nth-child(3) {
+  left: 1220px;
+  font-size: 2rem;
+  color: white;
+  animation-delay: 7.6s;
+}
+.main-container span:nth-child(4) {
+  left: 2120px;
+  font-size: 2rem;
+  color: white;
+  animation-delay: 2s;
+}
+.main-container span:nth-child(5) {
+  left: 1820px;
+  font-size: 2rem;
+  color: white;
+  animation-delay: 6s;
+}
+.main-container span:nth-child(6) {
+  left: 2340px;
+  font-size: 2rem;
+  color: white;
+  animation-delay: 5s;
+}
+.main-container span:nth-child(7) {
+  left: 1120px;
+  font-size: 2rem;
+  color: white;
+  animation-delay: 2s;
+}
+.main-container span:nth-child(8) {
+  left: 920px;
+  font-size: 2rem;
+  color: white;
+  animation-delay: 5s;
+}
+.main-container span:nth-child(9) {
+  left: 820px;
+  font-size: 2rem;
+  color: white;
+  animation-delay: 2s;
+}
+.main-container span:nth-child(10) {
+  left: 1880px;
+  font-size: 2rem;
+  color: white;
+  animation-delay: 3.5s;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translate(-500px, 700px) rotate(180deg);
+    opacity: 0;
+  }
+}
+.login-container {
+  position: absolute;
+  font-size: 1.4rem;
+  width: 24rem;
+  height: 25rem;
+  background: transparent;
+  border: 0.1rem solid #9663c9;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  transition: transform 1.3s ease-in-out;
+  transform: translateX(0);
+}
+.login-container .slide {
+  transition: transform 0.8s ease-in-out;
+  transform: translateX(0);
+}
+.login-container .btn-media-login {
+  border-radius: 40%;
+  height: 2.7rem;
+  width: 2.7rem;
+  border-style: none;
+  margin: 1.4rem 0.25rem;
+  border: solid rgb(92, 92, 177);
+  transition: 0.5s;
+  background: transparent;
+  overflow: hidden;
+  cursor: pointer;
+}
+.login-container .btn-media-login i {
+  padding: 5px 1px;
+  font-size: 1.5rem;
+}
+.login-container .btn-media-login:hover {
+  background-color: #fff;
+  transition: 0.5s;
+  width: 5.5rem;
+}
+.login-container .btn-media-login:hover i {
+  transition: 1s;
+  color: rgb(92, 92, 177);
+}
+.login-container h1 {
+  font-family: "Lato", cursive;
+  text-align: center;
+  font-size: 3.25rem;
+  color: white;
+}
+.login-container .btn {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 1rem;
+  transition: 0.5s;
+  cursor: pointer;
+  font-weight: 600;
+}
+.login-container .btn i {
+  position: absolute;
+  right: 1rem;
+  top: 0.25rem;
+}
+.login-container .btn:hover {
+  transition: 0.5s;
+  color: rgb(93, 151, 59);
+  opacity: 0.7;
+}
+
+.register-container {
+  position: absolute;
+  overflow: hidden;
+  width: 20rem;
+  height: 30rem;
+  font-size: 1.4rem;
+  right: 1rem;
+  background: transparent;
+  border: 0.1rem solid #9663c9;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  transition: transform 1.3s ease-in-out;
+  transform: translateX(-100%);
+  cursor: pointer;
+}
+.register-container .slide {
+  transition: transform 0.8s ease-in-out;
+  transform: translateX(0);
+  opacity: 1;
+}
+.register-container h1 {
+  font-family: "Lato", cursive;
+  text-align: center;
+  font-size: 2.25rem;
+  color: white;
+}
+.register-container .btn {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+.register-container .btn i {
+  position: absolute;
+  right: 1rem;
+  top: 0.25rem;
+}
+.register-container .btn:hover {
+  transition: 0.5s;
+  color: rgb(93, 151, 59);
+  opacity: 0.7;
+}
+
+.registration {
+  transform: translateY(300%);
+  transition-delay: 0ms;
+}
+
+.signInBtn-link {
+  transform: translateX(0);
+  transition-delay: 500ms, 0ms;
+}
+
+.input-container {
+  width: 100%;
+  position: relative;
+  height: 100%;
+  margin: 0.5rem 0rem;
+  text-align: center;
+}
+.input-container label {
+  position: absolute;
+  top: 70%;
+  left: 0.5rem;
+  transform: translateY(-40%);
+  color: #fff;
+  font-size: 0.8rem;
+  transition: 1s;
+}
+.input-container input {
+  width: 100%;
+  height: 3rem;
+  border: 0.02rem solid;
+  background: transparent;
+  font-size: 0.95rem;
+  color: #fff;
+  padding: 1rem 1rem 1rem 1rem;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+.input-container input:focus ~ label,
+.input-container input:valid ~ label {
+  top: 2px;
+}
+.input-container input::-moz-placeholder {
+  color: rgb(236, 231, 231);
+  font-size: 0.75rem;
+}
+.input-container input::placeholder {
+  color: rgb(236, 231, 231);
+  font-size: 0.75rem;
+}
+.input-container i {
+  position: absolute;
+  right: 1rem;
+  top: 25%;
+}
+
+.remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  margin: 0.5rem 0.5rem 0.5rem;
+  color: #fff;
+}
+.remember-forgot label input {
+  margin-right: 0.25rem;
+  accent-color: #fff;
+  vertical-align: bottom;
+  position: relative;
+  top: -0.15rem;
+  pointer-events: none;
+}
+.remember-forgot a {
+  color: #fff;
+  text-decoration: none;
+}
+.remember-forgot a:hover {
+  text-decoration: underline;
+}
+.remember-forgot p {
+  margin-left: 1rem;
+}
+
+.register {
+  font-size: 0.95rem;
+  text-align: center;
+}
+.register a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+.register a:hover {
+  text-decoration: underline;
+}
+.register p {
+  color: #fff;
+}
+
+.social-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.35rem;
+}
+.social-container .btn-media {
+  border-radius: 40%;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-style: none;
+  margin: 2rem 0.25rem;
+  border: solid rgb(92, 92, 177);
+  color: black;
+  overflow: hidden;
+  background: transparent;
+  cursor: pointer;
+}
+.social-container .btn-media i {
+  padding: 5px 1px;
+  font-size: 1.5rem;
+}
+.social-container .btn-media:hover {
+  background-color: #fff;
+  transition: 0.5s;
+  width: 5.5rem;
+  color: black;
+}
+.social-container .btn-media:hover i {
+  transition: 1s;
+  color: rgb(92, 92, 177);
+}/*# sourceMappingURL=style.css.map */
