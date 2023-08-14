@@ -23,22 +23,20 @@ document.addEventListener('DOMContentLoaded', () => {
   const errorElement = document.querySelector('#error')
   const registerButton = document.querySelector('.register-btn');
 
-  registerButton.addEventListener('click', (e) => {
-  let messages = []
-  if(usernameName.value === '' || usernameName.value == null) {
-    messages.push('Name is required')
-  }
+//   registerButton.addEventListener('click', (e) => {
+//   let messages = []
+//   if(usernameName.value === '' || usernameName.value == null) {
+//     messages.push('Name is required')
+//   }
 
-  if(password.value.length <= 6) {
-    messages.push('Password must be longer than 6 characters')
-  }
-  if (messages.length > 0) {
+//   if(password.value.length <= 6) {
+//     messages.push('Password must be longer than 6 characters')
+//   }
+//   if (messages.length > 0) {
 
-    e.preventDefault()
-    errorElement.innerText = messages.join(', ')
-  }
+//     e.preventDefault()
+//     errorElement.innerText = messages.join(', ')
+//   }
  
-})
-});
-
-
+// })
+// })
