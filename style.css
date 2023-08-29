@@ -25,14 +25,9 @@ body {
   overflow: hidden;
   justify-content: center;
   align-items: center;
-  width: 1500px;
-  height: 500px;
+  width: 1900px;
+  height: 700px;
   transition: transform 0.5s ease;
-}
-.main-container .slide {
-  transition: transform 0.8s ease-in-out;
-  transform: translateX(-100%);
-  overflow: hidden;
 }
 .main-container span {
   position: fixed;
@@ -120,17 +115,12 @@ body {
   position: relative;
   font-size: 1.4rem;
   width: 500px;
-  height: 25rem;
+  height: 27rem;
   background: transparent;
   border: 0.1rem solid #9663c9;
   border-radius: 0.5rem;
   padding: 1rem 2rem;
   transition: transform 1.3s ease-in-out;
-  transform: translateX(50%);
-}
-.login-container .slide {
-  transition: transform 0.8s ease-in-out;
-  transform: translateX(200px);
 }
 .login-container .btn-media-login {
   border-radius: 40%;
@@ -189,20 +179,14 @@ body {
 .register-container {
   overflow: hidden;
   width: 500px;
-  height: 30rem;
+  height: 33rem;
   font-size: 1.4rem;
   background: transparent;
   border: 0.1rem solid #9663c9;
   border-radius: 0.5rem;
   padding: 1rem 2rem;
   transition: transform 1.3s ease-in-out;
-  transform: translateX(50%);
   cursor: pointer;
-}
-.register-container .slide {
-  transition: transform 0.8s ease-in-out;
-  transform: translateX(0);
-  opacity: 1;
 }
 .register-container h1 {
   font-family: "Lato", cursive;
@@ -362,4 +346,8 @@ body {
 .social-container .btn-media:hover i {
   transition: 1s;
   color: rgb(92, 92, 177);
+}
+
+.hidden {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
